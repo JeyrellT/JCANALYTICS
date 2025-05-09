@@ -6,11 +6,18 @@ import Navbar from './components/layout/Navbar';
 import Footer from './components/layout/Footer';
 import BackToTop from './components/layout/BackToTop';
 import ScrollToTop from './components/layout/ScrollToTop';
-import './App.css';
+
+// Future flags for React Router v7 to prevent warnings
+const routerOptions = {
+  future: {
+    v7_startTransition: true,
+    v7_relativeSplatPath: true
+  }
+};
 
 function App() {
   return (
-    <Router>
+    <Router {...routerOptions}>
       <ScrollToTop />
       <div className="app">
         <Header />
