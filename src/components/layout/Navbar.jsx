@@ -11,6 +11,7 @@ const Navbar = () => {
     { id: 'alcance', label: 'Alcance' },
     { id: 'metodologia', label: 'Metodología' },
     { id: 'fases', label: 'Fases' },
+    { id: 'analytics-ml', label: 'Analytics & ML' },
     { id: 'herramientas', label: 'Herramientas' },
     { id: 'roi', label: 'ROI' },
     { id: 'beneficios', label: 'Beneficios' },

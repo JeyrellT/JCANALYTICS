@@ -37,9 +37,9 @@ const Resumen = () => {
         
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 mt-12">
           <StatItem number="6" label="Meses de Implementación" />
-          <StatItem number="162" label="ROI Primer Año (%)" />
-          <StatItem prefix="$" number="42" label="Incremento Anual de Ingresos (miles)" />
-          <StatItem number="250" suffix="+" label="Horas Mensuales Liberadas" />
+          <StatItem number="180" label="ROI Primer Año (%)" />
+          <StatItem prefix="$" number="59" label="Beneficio Anual Total (miles)" />
+          <StatItem prefix="+" number="223" label="Horas Mensuales Liberadas" />
         </div>
       </div>
     </section>

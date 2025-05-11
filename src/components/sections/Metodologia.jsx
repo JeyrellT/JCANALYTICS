@@ -52,33 +52,29 @@ const Metodologia = () => {
   const timelineItems = [
     {
       title: 'Definición y Medición',
-      description: 'Mapeo de procesos existentes y definición de KPIs actuales. Medición de tiempos y recursos dedicados a cada tarea.',
-      highlight: {
-        title: 'Caso ANC',
+      description: 'Mapeo de procesos existentes y definición de KPIs actuales. Medición de tiempos y recursos dedicados a cada tarea.',      highlight: {
+        title: 'Caso Empresa',
         content: 'La medición inicial identificó que los analistas dedican 45% de su tiempo a tareas manuales de datos.'
       }
     },
     {
       title: 'Análisis de Causas',
-      description: 'Identificación de tareas repetitivas o ineficientes y priorización de oportunidades de automatización y mejora de datos.',
-      highlight: {
-        title: 'Caso ANC',
+      description: 'Identificación de tareas repetitivas o ineficientes y priorización de oportunidades de automatización y mejora de datos.',      highlight: {
+        title: 'Caso Empresa',
         content: 'Análisis fishbone reveló duplicidad en reportes y falta de integración con sistemas de reservas.'
       }
     },
     {
       title: 'Diseño y Desarrollo',
-      description: 'Desarrollo de soluciones de automatización y análisis de manera iterativa (dashboards, flujos automatizados, modelos ML).',
-      highlight: {
-        title: 'Caso ANC',
+      description: 'Desarrollo de soluciones de automatización y análisis de manera iterativa (dashboards, flujos automatizados, modelos ML).',      highlight: {
+        title: 'Caso Empresa',
         content: 'Desarrollo de ETL automatizado que consolida datos de 3 fuentes diferentes en tiempo real.'
       }
     },
     {
       title: 'Control y Validación',
-      description: 'Implementación de controles para asegurar la calidad de los datos y la correcta operación de las automatizaciones.',
-      highlight: {
-        title: 'Caso ANC',
+      description: 'Implementación de controles para asegurar la calidad de los datos y la correcta operación de las automatizaciones.',      highlight: {
+        title: 'Caso Empresa',
         content: 'Sistema de alertas implementado detecta anomalías en patrones de reserva con 95% de precisión.'
       }
     }
@@ -313,7 +309,7 @@ const Metodologia = () => {
                   <th className="py-4 px-3 text-left">Mes</th>
                   <th className="py-4 px-3 text-left">Entregables documentales / de proceso</th>
                   <th className="py-4 px-3 text-left">Entregables técnicos</th>
-                  <th className="py-4 px-3 text-left">Valor para ANC</th>
+                  <th className="py-4 px-3 text-left">Valor para la Empresa</th>
                 </tr>
               </thead>
               <tbody>
@@ -519,7 +515,7 @@ const Metodologia = () => {
                     <div className="h-5 w-5 rounded-full bg-secondary bg-opacity-10 flex-shrink-0 mr-2 flex items-center justify-center mt-1">
                       <div className="h-2 w-2 rounded-full bg-secondary"></div>
                     </div>
-                    <p>Control Phase documentado: plan de monitoreo y transferencia de propiedad al equipo ANC para cada módulo entregado.</p>
+                    <p>Control Phase documentado: plan de monitoreo y transferencia de propiedad al equipo de la Empresa para cada módulo entregado.</p>
                   </li>
                 </ul>
               </div>
@@ -529,9 +525,8 @@ const Metodologia = () => {
         
         <Timeline items={timelineItems} />
         
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mt-16">
-          <Card title="Metodología Agile" icon={<FontAwesomeIcon icon={faCalendarAlt} />}>
-            <p className="mb-4">Implementamos ciclos cortos (sprints quincenales) con demos funcionales, lo que permite adaptar constantemente el alcance según la retroalimentación del equipo ANC.</p>
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mt-16">          <Card title="Metodología Agile" icon={<FontAwesomeIcon icon={faCalendarAlt} />}>
+            <p className="mb-4">Implementamos ciclos cortos (sprints quincenales) con demos funcionales, lo que permite adaptar constantemente el alcance según la retroalimentación del equipo de la Empresa.</p>
             <div className="bg-light bg-opacity-30 p-4 rounded-lg">
               <h4 className="font-semibold mb-2">Beneficios del enfoque Agile:</h4>
               <ul className="list-disc pl-5 space-y-1">

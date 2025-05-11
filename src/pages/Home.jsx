@@ -4,6 +4,7 @@ import Objetivos from '../components/sections/Objetivos';
 import Alcance from '../components/sections/Alcance';
 import Metodologia from '../components/sections/Metodologia';
 import Fases from '../components/sections/Fases';
+import AnalyticsML from '../components/sections/AnalyticsML';
 import Herramientas from '../components/sections/Herramientas';
 import ROI from '../components/sections/ROI';
 import Beneficios from '../components/sections/Beneficios';
@@ -18,6 +19,7 @@ const Home = () => {
       <Alcance />
       <Metodologia />
       <Fases />
+      <AnalyticsML />
       <Herramientas />
       <ROI />
       <Beneficios />

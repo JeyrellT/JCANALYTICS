@@ -502,7 +502,7 @@ const Herramientas = () => {
                   
                   <div className="bg-gray-100 p-4 rounded-lg">
                     <h5 className="font-semibold mb-2">Estructura de repositorio:</h5>
-                    <pre className="whitespace-pre-wrap text-sm bg-white p-2 rounded border border-gray-200">/anc-revenue-project
+                    <pre className="whitespace-pre-wrap text-sm bg-white p-2 rounded border border-gray-200">/empresa-revenue-project
 ├── /power-automate   # Flujos automatizados
 ├── /power-bi         # Archivos .pbix y datasets
 ├── /scripts-python   # Modelos predictivos y ETL

@@ -5,7 +5,8 @@ module.exports = {
   entry: './src/index.js',
   output: {
     filename: 'bundle.js',
-    path: path.resolve(__dirname, 'dist')
+    path: path.resolve(__dirname, 'dist'),
+    publicPath: '/JCANALYTICS/'
   },
   module: {
     rules: [
@@ -17,7 +18,7 @@ module.exports = {
   },
   plugins: [
     new HtmlWebpackPlugin({
-      template: './Public/index.html', // Changed from './public/index.html'
+      template: './public/index.html', // Corregido a minúsculas
     })
   ]
 };
