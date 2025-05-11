@@ -156,8 +156,8 @@ const Conclusion = () => {
               transition={{ duration: 0.8, delay: 0.3 }}
             >
               <FontAwesomeIcon icon={faCheckCircle} className="text-2xl mb-4" />
-              <p className="italic text-lg">"Esta transformación digital representa un salto cualitativo en nuestra capacidad para optimizar ingresos y racionalizar la operación de nuestra flota."</p>
-              <p className="mt-4 font-semibold">- Director de Operaciones</p>
+              <p className="italic text-lg">"La transformación digital no se trata de tecnología, se trata de la estrategia y nuevas formas de pensar."</p>
+              <p className="mt-4 font-semibold">- Jeanne W. Ross</p>
             </motion.div>
           </motion.div>
         </div>

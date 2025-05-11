@@ -163,18 +163,17 @@ const ROI = () => {
         >
           <h3 className="text-2xl font-semibold mb-6 text-primary">Escenarios de Implementación</h3>
           
-          <div className="overflow-x-auto">
-            <table className="min-w-full bg-white">
+          <div className="overflow-x-auto">            <table className="min-w-full bg-white">
               <thead>
-                <tr className="bg-gray-50">
-                  <th className="px-4 py-3 text-left text-sm font-medium text-gray-600">Escenario</th>
-                  <th className="px-4 py-3 text-center text-sm font-medium text-gray-600">Procesos</th>
-                  <th className="px-4 py-3 text-center text-sm font-medium text-gray-600">Horas/mes</th>
-                  <th className="px-4 py-3 text-center text-sm font-medium text-gray-600">Ahorro Anual</th>
-                  <th className="px-4 py-3 text-center text-sm font-medium text-gray-600">Ingreso Extra</th>
-                  <th className="px-4 py-3 text-center text-sm font-medium text-gray-600">Beneficio Total</th>
-                  <th className="px-4 py-3 text-center text-sm font-medium text-gray-600">ROI 1er Año</th>
-                  <th className="px-4 py-3 text-center text-sm font-medium text-gray-600">Payback</th>
+                <tr className="bg-black text-white">
+                  <th className="px-4 py-3 text-left text-sm font-medium">Escenario</th>
+                  <th className="px-4 py-3 text-center text-sm font-medium">Procesos</th>
+                  <th className="px-4 py-3 text-center text-sm font-medium">Horas/mes</th>
+                  <th className="px-4 py-3 text-center text-sm font-medium">Ahorro Anual</th>
+                  <th className="px-4 py-3 text-center text-sm font-medium">Ingreso Extra</th>
+                  <th className="px-4 py-3 text-center text-sm font-medium">Beneficio Total</th>
+                  <th className="px-4 py-3 text-center text-sm font-medium">ROI 1er Año</th>
+                  <th className="px-4 py-3 text-center text-sm font-medium">Payback</th>
                 </tr>
               </thead>
               <tbody>
@@ -202,42 +201,8 @@ const ROI = () => {
           <div className="mt-4 text-sm text-gray-600 italic">
             Base de cálculo: Inversión total $21,194 (6 meses con IVA incluido)
           </div>
-        </motion.div>
-
-        {/* ROI Detailed Charts - Updated with new metrics */}
+        </motion.div>        {/* ROI Detailed Charts - Updated with new metrics */}
         <div className="bg-white rounded-lg shadow-elevation-1 p-8 mb-12">
-          <h3 className="text-2xl font-semibold mb-6 text-primary">Desglose de Beneficios</h3>
-          
-          <div className="space-y-8">
-            {roiMetrics.map((item, index) => (
-              <div key={index} className="mb-8">
-                <div className="flex items-center justify-between mb-2">
-                  <div className="flex items-center">
-                    <FontAwesomeIcon icon={faChartLine} className="text-secondary mr-3" />
-                    <h4 className="font-semibold">{item.metric}</h4>
-                  </div>
-                  <span className="text-lg font-bold key-metric key-metric-threshold-exceeded">
-                    {item.value}
-                  </span>
-                </div>
-                
-                <div className="bg-gray-100 rounded-full h-6 mb-2 overflow-hidden">
-                  <motion.div 
-                    className="h-full bg-gradient-to-r from-secondary to-secondary-dark rounded-full"
-                    initial={{ width: "0%" }}
-                    animate={inView ? { width: item.target } : {}}
-                    transition={{ 
-                      duration: 1.5, 
-                      delay: index * 0.3,
-                      ease: [0.2, 0, 0.2, 1] 
-                    }}
-                  />
-                </div>
-                
-                <p className="text-sm text-text">{item.description}</p>
-              </div>
-            ))}
-          </div>
 
           {/* Benefit Distribution Pie Chart Illustration */}
           <div className="mt-8 border-t pt-6">
@@ -265,9 +230,7 @@ const ROI = () => {
                   </div>
                 </div>
               </div>
-              
-              <div className="md:w-2/3">
-                <h4 className="text-xl font-semibold mb-3">Distribución del Beneficio Total: $59,343</h4>
+                <div className="md:w-2/3">                <h4 className="text-xl font-semibold mb-3">Distribución del Beneficio Total: $59,343</h4>
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                   <div className="bg-gray-50 p-4 rounded-lg">
                     <div className="flex items-center">
